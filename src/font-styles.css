@@ -13,6 +13,19 @@ body {
 }
 
 .title-text {
-    /* letter-spacing: 2px; */
-    width: 60%;
+    width: 70%;
+}
+
+.main-title-text {
+    font-size: 64px;
+}
+
+/* ================================================ */
+/*                 MOBILE SIZES                     */
+/* ================================================ */
+
+@media (max-width: 768px) {
+    .main-title-text {
+        font-size: 48px;
+    }
 }
