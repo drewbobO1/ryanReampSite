@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'HelveticaNeueBold';
-    src: url(./assets/fonts/HelveticaNeueBold.woff2) format('woff2'),
-         url(./assets/fonts/HelveticaNeueBold.ttf) format('truetype');
+    src: url(../public/assets/fonts/HelveticaNeueBold.woff2) format('woff2'),
+         url(../public/assets/fonts/HelveticaNeueBold.ttf) format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -14,5 +14,5 @@ body {
 
 .title-text {
     /* letter-spacing: 2px; */
-    width: 50%;
+    width: 60%;
 }

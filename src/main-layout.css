@@ -8,7 +8,7 @@ html, body {
 body {
     position: fixed;
 
-    background-image: url('./assets/imgs/studio-b-b&w-min.png');
+    background-image: url('../public/assets/imgs/studio-b-b&w-min.png');
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: top left; 
@@ -68,4 +68,14 @@ main {
 
 .spotify-container {
     margin-top: 5%;
+}
+
+/* ================================================ */
+/*                 MOBILE SIZES                     */
+/* ================================================ */
+
+@media (max-width: 768px) {
+    .content {
+        justify-content: center;
+    }
 }
