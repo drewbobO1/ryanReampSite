@@ -117,6 +117,11 @@ main {
     .btn {
         font-size: 24px;
     }
+
+    .btn-icon {
+        margin-left: 4%;
+      }
+    
 }
 
 
@@ -173,11 +178,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5% 3%;
+    padding: 1.5% 4%;
   }
 
   .btn-icon {
-    margin-left: 5%;
+    margin-left: 9%;
   }
 
 
