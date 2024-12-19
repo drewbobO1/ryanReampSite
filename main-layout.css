@@ -39,7 +39,7 @@ main {
 }
 
 .main-content-column {
-    width: 30%;
+    /* width: 30%; */
     height: 100%;
 
     display: flex;
@@ -52,6 +52,10 @@ main {
     height: fit-content;
 }
 
+.title-text {
+    padding: 3%;
+}
+
 .bg-black {
     background-color: #000;
     color: #fff;
@@ -60,4 +64,8 @@ main {
 .bg-white {
     background-color: #fff;
     color: #000;
+}
+
+.spotify-container {
+    margin-top: 5%;
 }
