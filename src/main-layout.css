@@ -109,6 +109,14 @@ main {
     .content {
         justify-content: center;
     }
+
+    .prompt-window-container {
+        width: 90%;
+    }
+
+    .btn {
+        font-size: 24px;
+    }
 }
 
 
@@ -159,6 +167,17 @@ main {
 
   .window-body {
     padding: 5%;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5% 3%;
+  }
+
+  .btn-icon {
+    margin-left: 5%;
   }
 
 

@@ -44,10 +44,16 @@ function handleContactBtn() {
 
   const buttonSection = document.createElement('section');
   buttonSection.classList.add('field-row');
+  buttonSection.style.display = "flex";
   buttonSection.style.justifyContent = "flex-end";
+
+  // const buttonContainer = document.createElement('div');
+  // buttonContainer.style.display = "flex";
+  // buttonSection.style.justifyContent = "space-between";
+
   
-  const viewPDFBtn = document.createElement('button');
-  viewPDFBtn.textContent = "Delete!";
+  const viewPDFBtn = document.createElement('div');
+  viewPDFBtn.classList.add('bg-black', 'btn');
   viewPDFBtn.addEventListener('click', () => {
 
     
@@ -56,13 +62,36 @@ function handleContactBtn() {
     promptWindowContainer.classList.remove("show");
   })
 
+  const pdfBtnText = document.createElement('div');
+  pdfBtnText.textContent = "file sharing guidelines";
 
-  const continueToEmailBtn = document.createElement('button');
-  continueToEmailBtn.textContent = "No, keep it";
+  const pdfBtnIcon = document.createElement('div');
+  pdfBtnIcon.classList.add('btn-icon');
+  pdfBtnIcon.innerHTML = `<i class="fa-solid fa-file-lines"></i>`;
+
+  viewPDFBtn.appendChild(pdfBtnText);
+  viewPDFBtn.appendChild(pdfBtnIcon);
+
+  const continueToEmailBtn = document.createElement('div');
+  continueToEmailBtn.classList.add('bg-black', 'btn');
+  continueToEmailBtn.style.marginLeft = "2%";
   continueToEmailBtn.addEventListener('click', () => {
+
+
+
     backdrop.classList.remove("show");
     promptWindowContainer.classList.remove("show");
   })
+
+  const continueToEmailText = document.createElement('div');
+  continueToEmailText.textContent = "contact";
+
+  const continueToEmailIcon = document.createElement('div');
+  continueToEmailIcon.classList.add('btn-icon');
+  continueToEmailIcon.innerHTML = `<i class="fa-solid fa-paper-plane"></i>`;
+
+  continueToEmailBtn.appendChild(continueToEmailText);
+  continueToEmailBtn.appendChild(continueToEmailIcon);
   
   buttonSection.appendChild(viewPDFBtn);
   buttonSection.appendChild(continueToEmailBtn);
