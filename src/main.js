@@ -64,6 +64,7 @@ function handleContactBtn() {
 
   const pdfBtnText = document.createElement('div');
   pdfBtnText.textContent = "file sharing guidelines";
+  // pdfBtnText.classList.add('')
 
   const pdfBtnIcon = document.createElement('div');
   pdfBtnIcon.classList.add('btn-icon');

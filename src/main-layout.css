@@ -115,7 +115,7 @@ main {
     }
 
     .btn {
-        font-size: 24px;
+        /* padding-right: 6.5%; */
     }
 
     .btn-icon {
@@ -178,11 +178,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5% 4%;
+    padding: 8px 17px 8px 6px; /* This is not ideal but percentages are interacting strangely with MQs */
+    font-size: 24px;
   }
 
   .btn-icon {
-    margin-left: 9%;
+    margin-left: 6%;
   }
 
 
