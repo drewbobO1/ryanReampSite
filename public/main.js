@@ -164,12 +164,12 @@ function proceedToEmailDraft(songQty) {
   console.log("proceedToEmailDraft function reached!");
   const email = "ryan@makebelievestudio.com";
   const subject = "Reamping Inquiry";
-  const emailBody = `Ryan, \n\nI'm looking to get ${songQty} songs reamped. Please let me know if you have availability currently`;
+  const emailBody = `Ryan, \n\nI'm looking to get ${songQty} songs reamped. Please let me know if you have availability currently.`;
 
   const encodedSubject = encodeURIComponent(subject);
   const encodedBody = encodeURIComponent(emailBody);
 
-  document.location = `mailto:"+${email}+"?subject="+${encodedSubject}+"&body="+${encodedBody}`;
+  document.location = `mailto:${email}?subject=${encodedSubject}&body=${encodedBody}`;
 }
 
 const bgImgsUrlArr = [
