@@ -178,15 +178,11 @@ const bgImgsUrlArr = [
   '../public/assets/imgs/amp-wall-full-blurred-min.png'
 ];
 
-
-
 let i = 0;
-// while (true) {
-//   if (i <= 3) i = 0;
 
-//   setTimeout(() => {
-//     document.body.style.backgroundImage = bgImgsUrlArr[i];
-//   }, 5000);
+setInterval(() => {
+    document.body.style.backgroundImage = `url("${bgImgsUrlArr[i]}")`;
+    console.log("Value of i: ", i);
 
-//   i += 1;
-// }
+    i = (i + 1) % bgImgsUrlArr.length;
+}, 5000);
