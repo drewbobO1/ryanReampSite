@@ -54,7 +54,7 @@ function handleContactBtn() {
   viewPDFBtn.classList.add('bg-black', 'btn');
   viewPDFBtn.addEventListener('click', () => {
 
-    
+    downloadFile("./assets/File_Sharing_Guidelines-Ryan_Harvey_Reamping.pdf", "File Sharing Guidelines - Ryan Harvey Reamping.pdf");
 
     backdrop.classList.remove("show");
     promptWindowContainer.classList.remove("show");
@@ -62,6 +62,7 @@ function handleContactBtn() {
 
   const pdfBtnText = document.createElement('div');
   pdfBtnText.textContent = "file sharing guidelines";
+  // pdfBtnText.href = "./assets/File_Sharing_Guidelines-Ryan_Harvey_Reamping.pdf";
   // pdfBtnText.classList.add('')
 
   const pdfBtnIcon = document.createElement('div');
@@ -186,3 +187,13 @@ setInterval(() => {
 
     i = (i + 1) % bgImgsUrlArr.length;
 }, 5000);
+
+
+function downloadFile(url, fileName) {
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = fileName;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
